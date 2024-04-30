@@ -4,42 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hélène Monnier-Capron // Développeuse Javascript Fullstack</title>
-  <link rel="stylesheet" href="./src/style/output.css">
+  <link rel="stylesheet" href="./src/dist/style.css">
 </head>
-<body class="bg-background h-dvh">
+<body class="bg-background h-screen">
   
-  <header id="home" class="flex h-dvh">
-    <div class="flex flex-col justify-center items-start w-1/2 p-3 gap-2">
-      <p class="uppercase bg-primary">Hi there!</p>
-      <p class="uppercase">I'm <strong data-text="Helene">Helene</strong></p>
-      <p class="">Développeuse - Javascript fullstack</p>
-      <p>En reconversion dans le développement web et web mobile, je suis à l'affût de nouveaux projets  développeuse FullStack JS. 
+  <header id="home" class="flex h-screen">
+    <div class="flex flex-col justify-center items-start w-1/2 p-3 gap-10">
+      <p class="uppercase font-bold text-3xl">Hi there!</p>
+      <p class="uppercase font-bold text-7xl">I'm <strong data-text="Helene">Helene</strong></p>
+      <p class="uppercase font-bold bg-primary text-background p-4">Développeuse - Javascript fullstack</p>
+      <p class="">En reconversion dans le développement web et web mobile, je suis à l'affût de nouveaux projets  développeuse FullStack JS. 
         JS, Node.Js, Express, REACT, Tailwind sont mes terrains de jeux de prédilection. 
         J’ai soif d’apprentissages et j’ai hâte de contribuer à l’évolution de vos projets !</p>        
-      <a href="#about-me">More about me</a>
+      <a href="#about-me" class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2">More about me</a>
     </div>
-    <div class=""></div>
+    <div class="w-1/2 bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center"></div>
   </header>
 
-  <main class="">
-    <section class="">
-      <div class=""></div>
+  <main class="flex">
+    <section class="flex flex-col bg-primary  text-background font-bold h-screen w-1/5">
+      <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-cover bg-center bg-no-repeat h-2/6"></div>
       <div class="">
-        <nav>
-          <ul class="">
-            <li class=""><a href="#home">Home</a></li>
-            <li class=""><a href="#portfolio">Portfolio</a></li>
-            <li class=""><a href="#resume">Parcours</a></li>
-            <li class=""><a href="#contact">Contact</a></li>
-            <li class=""><a href="#about-me">About me</a></li>
+        <nav class="">
+          <ul class="flex flex-col gap-20 uppercase pt-10 items-center">
+            <li class="hover:scale-150"><a href="#home">Home</a></li>
+            <li class="hover:scale-150"><a href="#portfolio">Portfolio</a></li>
+            <li class="hover:scale-150"><a href="#resume">Parcours</a></li>
+            <li class="hover:scale-150"><a href="#contact">Contact</a></li>
+            <li class="hover:scale-150"><a href="#about-me">About me</a></li>
           </ul>
         </nav>
       </div>
     </section>
-    <div class="">
-      <section class="" id="about-me">
-        <h2>about me</h2>
-        <h1>I'm <strong>Hélène Monnier-Capron,</strong> Développeuse web fullstack JS</h1>
+    <div class="w-4/5 flex flex-col justify-between gap-10">
+      <section class="p-4 flex flex-col h-screen justify-between" id="about-me">
+        <h2 class="uppercase text-center text-4xl font-bold p-4 border-2 border-accent ">about me</h2>
+        <h1 class="text-3xl">I'm <strong>Hélène Monnier-Capron,</strong> Développeuse web fullstack JS</h1>
         <p>En reconversion dans le développement web et web mobile, je suis à la recherche de nouveaux terrains de jeux pour développer mes compétences comme développeuse FullStack JS. 
         JS, Node.Js, Express, REACT, HTML & CSS sont mes terrains de jeux de prédilection. 
         J’ai soif d’apprentissages et j’ai hâte de contribuer à l’évolution de vos projets !</p> 
@@ -74,14 +74,14 @@
         </div>    
       </section>
 
-      <div id="typedtext" class="">
+      <div id="typedtext" class="bg-primary text-background p-4">
         <p>"Je passe mon temps à faire ce que je ne sais pas faire,</p>
         <p>pour apprendre à le faire."</p>
         <p>Pablo Picasso</p>
       </div>
 
-      <section class="" id="portfolio">
-      <h2>Portfolio</h2>
+      <section class="p-4" id="portfolio">
+      <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Portfolio</h2>
       <nav>
         <ul class="">
           <li>Tous</li>
@@ -103,54 +103,54 @@
   
       </section>
 
-      <div class="">
+      <div class="bg-primary text-background p-4">
           <p>.invisibility-cloack + #harry-potter {</p>
           <p>visibility : hidden; </p>
           <p>}</p>
       </div>
 
-      <section class="" id="resume">
-      <h2>Parcours</h2>        
-      <h3>Expériences</h3>
-      <div class="">
+      <section class="p-4" id="resume">
+        <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Parcours</h2>        
+        <h3>Expériences</h3>
         <div class="">
-          <h4 class="">Playground Explorer</h4>
-          <p class=""> Avril 2024 - Ecole O'CLock</p>
-          <p class="">Conception et mise en œuvre collaborative d'une application web dans un environnement professionnel, du stade conceptuel jusqu'au déploiement d'un produit minimum viable (MVP), en suivant la méthodologie agile.</p>
+          <div class="">
+            <h4 class="">Playground Explorer</h4>
+            <p class=""> Avril 2024 - Ecole O'CLock</p>
+            <p class="">Conception et mise en œuvre collaborative d'une application web dans un environnement professionnel, du stade conceptuel jusqu'au déploiement d'un produit minimum viable (MVP), en suivant la méthodologie agile.</p>
+          </div>
+          <div class="">
+            <h4 class="">Consultante numérique</h4>
+            <p class="">2014 > 2023 - BGE Hauts de France</p>
+            <p class="">J'ai soutenu la transformation numérique d'entrepreneurs, au niveau stratégique et dans l'utilisation des outils
+              Formatrice aux outils numériques : Wordpress, Divi, Woo Commerce, Social Média, SEO/SEA
+              Formations collectives et coaching sur le développement des compétences entrepreneuriales</p>
+          </div>
         </div>
-        <div class="">
-          <h4 class="">Consultante numérique</h4>
-          <p class="">2014 > 2023 - BGE Hauts de France</p>
-          <p class="">J'ai soutenu la transformation numérique d'entrepreneurs, au niveau stratégique et dans l'utilisation des outils
-            Formatrice aux outils numériques : Wordpress, Divi, Woo Commerce, Social Média, SEO/SEA
-            Formations collectives et coaching sur le développement des compétences entrepreneuriales</p>
-        </div>
-      </div>
 
-      <h3>Formations</h3>
-      <div class="">
+        <h3>Formations</h3>
         <div class="">
-          <h4 class="">Ecole O'Clock</h4>
-          <p class="">Octobre 2023 - Avril 2024</p>
-          <p class="">Formation de 6 mois à temps plein, en téléprésentiel, de préparation au Titre Professionnel Développeur Web et Web Mobile</p>
-        </div>
-        <div class="">
-          <h4 class="">IAE Lille</h4>
-          <p class="">2014 - 2015</p>
-          <p class="">Licence Professionnelle Management des Organisations. Effectuée en contrat de professionnalisation chez BGE Hauts de France</p>
-        </div>
-      </div> 
-      <a class="" href="./html/CV.html" target="_blank">Mon CV</a>
+          <div class="">
+            <h4 class="">Ecole O'Clock</h4>
+            <p class="">Octobre 2023 - Avril 2024</p>
+            <p class="">Formation de 6 mois à temps plein, en téléprésentiel, de préparation au Titre Professionnel Développeur Web et Web Mobile</p>
+          </div>
+          <div class="">
+            <h4 class="">IAE Lille</h4>
+            <p class="">2014 - 2015</p>
+            <p class="">Licence Professionnelle Management des Organisations. Effectuée en contrat de professionnalisation chez BGE Hauts de France</p>
+          </div>
+        </div> 
+        <a class="" href="./html/CV.html" target="_blank">Mon CV</a>
       </section>
 
-      <div class="">
+      <div class="bg-primary text-background p-4">
         <p>Let's make</p>
         <p>your project</p>
         <p>my 127.0.0.1</p>
       </div>
 
-      <section class="" id="contact">
-        <h2>Contact</h2>        
+      <section class="p-4" id="contact">
+        <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Contact</h2>        
         
         <h3>Collaborations</h3>
         <p>Je suis ouverte aux opportunités de collaboration, que ce soit pour des missions freelance ou des postes à temps plein. N'hésites pas à me contacter si tu as un projet intéressant à discuter !</p>
@@ -185,8 +185,8 @@
           </div>
         </div>
       </section>
-      <div class="">
-        <p>© Hélène Monnier-Capron 2024</p>
+      <div class="bg-primary text-background p-4">
+        <p class="text-text-dark">© Hélène Monnier-Capron 2024</p>
       </div>
     </div>
   </main>

@@ -1,17 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-
-import Colors from 'tailwindcss/colors';
-
 module.exports = {
   content: ["./index.html"],
   theme: {
-    screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-    },
-
     variants: {
       extend: {
         gap: ['responsive'], // Active the gap propriety
@@ -19,8 +9,6 @@ module.exports = {
     },
 
     colors: {
-      ...Colors,
-
       primary: {
         DEFAULT: '#197586',
         dark: '#79D6E6',
@@ -56,4 +44,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-};
+}
+
