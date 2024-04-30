@@ -43,47 +43,45 @@
         <p>En reconversion dans le développement web et web mobile, je suis à la recherche de nouveaux terrains de jeux pour développer mes compétences comme développeuse FullStack JS. 
         JS, Node.Js, Express, REACT, HTML & CSS sont mes terrains de jeux de prédilection. 
         J’ai soif d’apprentissages et j’ai hâte de contribuer à l’évolution de vos projets !</p> 
-        <div class="">
-          <div class="">
-            <i class=""></i>
-            <p>Veille techno</p>
-            <p>Toujours à l'affut de nouveaux terrains de jeux</p>
+        <div class="flex">
+          <div class="flex flex-col gap-2 items-center">
+            <p class="text-center">Veille techno</p>
+            <p class="text-center">Toujours à l'affut de nouveaux terrains de jeux</p>
           </div>
-          <div class="">
-            <i class=""></i>
-            <p>Passion</p>
-            <p>Envie de donner le meilleur pour chaque projet</p>
+          <div class="flex flex-col max-w-20 gap-2">
+            <p class="text-center">Passion</p>
+            <p class="text-center">Envie de donner le meilleur pour chaque projet</p>
           </div>
-          <div class="">
+          <div class="flex flex-col max-w-20 gap-2">
             <i class=""></i>
-            <p>Travail d'équipe</p>
-            <p>Clients, collaborateurs, managers; ensemble, c'est mieux !</p>
+            <p class="text-center">Travail d'équipe</p>
+            <p class="text-center">Clients, collaborateurs, managers; ensemble, c'est mieux !</p>
           </div>
         </div>
-        <div class="">
-          <div class="">
+        <div class="flex justify-evenly">
+          <div class="flex flex-col max-w-5 gap-2">
             <i class=""></i>
-            <p>Front</p>
-            <p>REACT, EJS, Intégration HTML/CSS/JS</p>
+            <p class="text-center">Front</p>
+            <p class="text-center">REACT, Tailwind, EJS, Intégration HTML/CSS/JS</p>
           </div>
-          <div class="">
+          <div class="flex flex-col max-w-20 gap-2">
             <i class=""></i>
-            <p>Back</p>
-            <p>Javascript, NodeJS, Express, Sequelize</p>
+            <p class="text-center">Back</p>
+            <p class="text-center">Javascript, NodeJS, Express, Sequelize</p>
           </div>
-        </div>    
+        </class=>    
       </section>
 
-      <div id="typedtext" class="bg-primary text-background p-4">
+      <div id="typedtext" class="bg-primary text-background p-4 text-center leading-6">
         <p>"Je passe mon temps à faire ce que je ne sais pas faire,</p>
         <p>pour apprendre à le faire."</p>
         <p>Pablo Picasso</p>
       </div>
 
-      <section class="p-4" id="portfolio">
+      <section class="p-4 flex flex-col h-screen" id="portfolio">
       <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Portfolio</h2>
-      <nav>
-        <ul class="">
+      <nav class="p-4 hidden">
+        <ul class="flex justify-evenly gap-4">
           <li>Tous</li>
           <li>Site vitrine</li>
           <li>Ecommerce</li>
@@ -91,19 +89,43 @@
           <li>Appli</li>
         </ul>
       </nav>
-
-      <div class="">
-        <a href="https://www.playground-explorer.fr/">        
-          <div class="">
-            <div class=""></div>
-            <div class="">Playground Explorer</div>
+      <div class="flex p-4">
+        <a href="#" class=" cursor-pointer max-h-60 max-w-60">
+          <div className="flex max-h-60 max-w-60 transform flex-col justify-between rounded-xl bg-cover bg-center shadow-2xl transition duration-500 ease-in-out hover:scale-105"
+          >
+            <img src="/public/pictures/porfolio/playground-explorer.png" alt="">
+            <div className="flex items-center justify-between rounded-b-xl bg-white px-4 py-2 opacity-90">
+              <div className="flex flex-col">
+                <h3 className="font-bold">Playground Explorer</h3>
+                <p className="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum nesciunt quidem nam numquam, facilis quisquam.</p>
+              </div>
+            </div>
           </div>
         </a>
+        <div class="max-h-60 max-w-60">
+          <div
+          className="flex max-h-60 max-w-60 transform flex-col justify-between
+            rounded-xl
+          bg-cover
+          bg-center shadow-2xl transition duration-500 ease-in-out hover:scale-105"
+          >
+          <img src="/public/pictures/porfolio/portfolio.png" alt="">
+          <div className="flex items-center justify-between rounded-b-xl bg-white px-4 py-2 opacity-90">
+            <div className="flex flex-col">
+              <h3 className="font-bold">Ce portfolio</h3>
+              <p className="font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum nesciunt quidem nam numquam, facilis quisquam.</p>
+            </div>
+          </div>
+        </div>
       </div>
+     
+
+
+      
   
       </section>
 
-      <div class="bg-primary text-background p-4">
+      <div class="bg-primary text-background p-4 text-center leading-6">
           <p>.invisibility-cloack + #harry-potter {</p>
           <p>visibility : hidden; </p>
           <p>}</p>
@@ -143,7 +165,7 @@
         <a class="" href="./html/CV.html" target="_blank">Mon CV</a>
       </section>
 
-      <div class="bg-primary text-background p-4">
+      <div class="bg-primary text-background p-4 text-center leading-6">
         <p>Let's make</p>
         <p>your project</p>
         <p>my 127.0.0.1</p>
@@ -185,7 +207,7 @@
           </div>
         </div>
       </section>
-      <div class="bg-primary text-background p-4">
+      <div class="bg-primary text-background p-4 text-center leading-6">
         <p class="text-text-dark">© Hélène Monnier-Capron 2024</p>
       </div>
     </div>
