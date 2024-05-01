@@ -5,38 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hélène Monnier-Capron // Développeuse Javascript Fullstack</title>
   <link rel="stylesheet" href="./src/dist/style.css">
+  <script src="./src/js/script.js" defer></script>
 </head>
-<body class="bg-background h-screen">
-  
+<body class="bg-background h-screen w-screen">
   <header id="home" class="flex h-screen">
     <div class="flex flex-col justify-center items-start w-1/2 p-3 gap-10">
       <p class="uppercase font-bold text-3xl">Hi there!</p>
-      <p class="uppercase font-bold text-7xl">I'm <strong data-text="Helene">Helene</strong></p>
-      <p class="uppercase font-bold bg-primary text-background p-4">Développeuse - Javascript fullstack</p>
+      <p class="uppercase font-bold text-7xl">I'm <strong>Helene</strong></p>
+      <h1 class="uppercase font-bold bg-primary text-background p-4">Développeuse - Javascript fullstack</h1>
       <p class="">En reconversion dans le développement web et web mobile, je suis à l'affût de nouveaux projets  développeuse FullStack JS. 
-        JS, Node.Js, Express, REACT, Tailwind sont mes terrains de jeux de prédilection. 
+        <strong>Javascript, Node.Js, Express, REACT, Tailwind</strong> sont mes terrains de jeux de prédilection. 
         J’ai soif d’apprentissages et j’ai hâte de contribuer à l’évolution de vos projets !</p>        
-      <a href="#about-me" class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2">More about me</a>
+      <a href="./index.html" class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2">More about me</a>
     </div>
     <div class="w-1/2 bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center"></div>
   </header>
-
-  <main class="flex">
-    <section class="flex flex-col bg-primary  text-background font-bold h-screen w-1/5">
+  <main class="">
+    <div class="hidden  flex-col bg-primary  text-background font-bold h-screen w-1/5">
       <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-cover bg-center bg-no-repeat h-2/6"></div>
-      <div class="">
-        <nav class="">
-          <ul class="flex flex-col gap-20 uppercase pt-10 items-center">
-            <li class="hover:scale-150"><a href="#home">Home</a></li>
-            <li class="hover:scale-150"><a href="#portfolio">Portfolio</a></li>
-            <li class="hover:scale-150"><a href="#resume">Parcours</a></li>
-            <li class="hover:scale-150"><a href="#contact">Contact</a></li>
-            <li class="hover:scale-150"><a href="#about-me">About me</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <div class="w-4/5 flex flex-col justify-between gap-10">
+      <nav class="">
+        <ul class="flex flex-col gap-20 uppercase pt-10 items-center">            
+          <li class="hover:scale-150"><a href="./landing.html">Home</a></li>
+          <li class="hover:scale-150 "><a href="#about-me">About me</a></li>
+          <li class="hover:scale-150"><a href="#portfolio">Portfolio</a></li>
+          <li class="hover:scale-150"><a href="#resume">Parcours</a></li>
+          <li class="hover:scale-150"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex flex-col gap-10">
       <section class="p-4 flex flex-col gap-14 justify-between" id="about-me">
         <h2 class="uppercase text-center text-4xl font-bold p-4 border-2 border-accent ">about me</h2>
         <h1 class="text-3xl p-4">I'm <strong>Hélène Monnier-Capron,</strong> Développeuse web fullstack JS</h1>
@@ -137,7 +134,7 @@
             <p class="">Licence Professionnelle Management des Organisations. Effectuée en contrat de professionnalisation chez BGE Hauts de France</p>
           </div>
         </div> 
-        <a class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2 text-center w-1/5" href="./html/CV.html" target="_blank">Mon CV</a>
+        <a class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2 text-center w-1/5" href="./public/pictures/Hélène Monnier-Capron.pdf" target="_blank">Mon CV</a>
       </section>
 
       <div class="bg-primary text-background p-4 text-center leading-6">
@@ -146,7 +143,7 @@
         <p>my 127.0.0.1</p>
       </div>
 
-      <section class="p-4" id="contact">
+      <section class=" p-4" id="contact">
         <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Contact</h2>        
         
         <h3>Collaborations</h3>
