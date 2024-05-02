@@ -9,7 +9,7 @@
 </head>
 <body class="bg-background h-screen w-screen">
   <header id="home" class="flex h-screen">
-    <div class="flex flex-col justify-center items-start w-1/2 p-3 gap-10">
+    <div class="flex flex-col justify-center items-start w-1/2 p-10 gap-10">
       <p class="uppercase font-bold text-3xl">Hi there!</p>
       <p class="uppercase font-bold text-7xl">I'm <strong>Helene</strong></p>
       <h1 class="uppercase font-bold bg-primary text-background p-4">Développeuse - Javascript fullstack</h1>
@@ -20,7 +20,7 @@
     </div>
     <div class="w-1/2 bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center"></div>
   </header>
-  <main class="">
+  <main class="pt-10">
     <div class="hidden  flex-col bg-primary  text-background font-bold h-screen w-1/5">
       <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-cover bg-center bg-no-repeat h-2/6"></div>
       <nav class="">
@@ -34,7 +34,7 @@
       </nav>
     </div>
     <div class="flex flex-col gap-10">
-      <section class="p-4 flex flex-col gap-14 justify-between" id="about-me">
+      <section class="w-2/3 mx-auto p-4 flex flex-col gap-14 justify-between" id="about-me">
         <h2 class="uppercase text-center text-4xl font-bold p-4 border-2 border-accent ">about me</h2>
         <h1 class="text-3xl p-4">I'm <strong>Hélène Monnier-Capron,</strong> Développeuse web fullstack JS</h1>
         <p class="p-4">En reconversion dans le développement web et web mobile, je suis à la recherche de nouveaux terrains de jeux pour développer mes compétences comme développeuse FullStack JS. 
@@ -72,7 +72,7 @@
         <p>Pablo Picasso</p>
       </div>
 
-      <section class="p-4 flex flex-col gap-4 " id="portfolio">
+      <section class=" w-2/3 mx-auto p-4 flex flex-col gap-4 " id="portfolio">
         <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Portfolio</h2>
         <nav class="p-4 hidden">
         <ul class="flex justify-evenly gap-4">
@@ -103,16 +103,16 @@
           <p>}</p>
       </div>
 
-      <section class="flex flex-col gap-10 flex-wrap p-4" id="resume">
+      <section class="w-2/3 mx-auto flex flex-col gap-10 flex-wrap p-4" id="resume">
         <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Parcours</h2>        
         <h3 class="text-2xl uppercase font-bold ">Expériences</h3>
-        <div class="flex flex-wrap p-4">
-          <div class="flex flex-col flex-wrap p-2 gap-1">
+        <div class="flex gap-4 justify-evenly flex-wrap p-4">
+          <div class="flex flex-col flex-wrap p-2 gap-1 w-1/3">
             <h4 class="text-xl bg-primary text-background p-2">Playground Explorer</h4>
             <p class="text-sm "> Avril 2024 - Ecole O'CLock</p>
             <p class="">Conception et mise en œuvre collaborative d'une application web dans un environnement professionnel, du stade conceptuel jusqu'au déploiement d'un produit minimum viable (MVP), en suivant la méthodologie agile.</p>
           </div>
-          <div class="flex flex-col flex-wrap p-2 gap-1">
+          <div class="flex flex-col flex-wrap p-2 gap-1 w-1/3">
             <h4 class="text-xl bg-primary text-background p-2">Consultante numérique</h4>
             <p class="text-sm">2014 > 2023 - BGE Hauts de France</p>
             <p class="">J'ai soutenu la transformation numérique d'entrepreneurs, au niveau stratégique et dans l'utilisation des outils
@@ -143,22 +143,22 @@
         <p>my 127.0.0.1</p>
       </div>
 
-      <section class=" p-4" id="contact">
+      <section class="w-2/3 mx-auto flex flex-col gap-10 flex-wrap p-8" id="contact">
         <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Contact</h2>        
         
-        <h3>Collaborations</h3>
+        <h3 class="text-2xl uppercase font-bold">Collaborations</h3>
         <p>Je suis ouverte aux opportunités de collaboration, que ce soit pour des missions freelance ou des postes à temps plein. N'hésites pas à me contacter si tu as un projet intéressant à discuter !</p>
 
-        <div class="">
-          <div class="">
-            <h3>On se suit ?</h3>
+        <div class="flex gap-20">
+          <div class="flex flex-col gap-10 w-1/3">
+            <h3 class="text-2xl uppercase font-bold">On se suit ?</h3>
             <p>Je suis toujours hyper connectée, donc tu peux aussi me joindre par ces moyens : </p>
             <a href="mailto:monnier.helene@outlook.com" target="_blank"> <i class="fi fi-rr-comment-alt"></i>monnier.helene@outlook.com</a>
             <a href="https://github.com/helene-monnier" target="_blank"> <i class="fi fi-brands-github"></i>GitHub</a>
             <a href="https://www.linkedin.com/in/helene-monnier/" target="_blank"> <i class="fi fi-brands-linkedin"></i>LinkedIn</a>
           </div>
-          <div class="">
-            <h3>Envie de me contacter?</h3>
+          <div class="w-2/3">
+            <h3 class="text-2xl uppercase font-bold">Envie de me contacter?</h3>
             <p>Génial ! Que ce soit pour discuter de projets, échanger des idées ou simplement papoter, je suis toute ouïe. Remplis le formulaire ci-dessous et je te répondrai dès que possible !</p>
 
             <form class="" action="" method="post">
