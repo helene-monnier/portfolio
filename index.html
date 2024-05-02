@@ -9,7 +9,7 @@
   <script src="./src/js/script.js" defer></script>
 </head>
 <body class="bg-background h-screen w-screen">
-  <header id="home" class="flex h-screen">
+  <header id="home" class="flex md:h-screen">
     <div class="flex flex-col justify-center items-start w-1/2 p-10 gap-10">
       <p class="uppercase font-bold text-3xl">Hi there!</p>
       <p class="uppercase font-bold text-7xl">I'm <strong>Helene</strong></p>
@@ -156,17 +156,26 @@
           <div class="flex flex-col gap-10 w-1/3">
             <h3 class="text-2xl uppercase font-bold">On se suit ?</h3>
             <p>Je suis toujours hyper connectée, donc tu peux aussi me joindre par ces moyens : </p>
-            <a href="mailto:monnier.helene@outlook.com" target="_blank"> <i class="fi fi-rr-comment-alt"></i>monnier.helene@outlook.com</a>
-            <a href="https://github.com/helene-monnier" target="_blank"> <i class="fi fi-brands-github"></i>GitHub</a>
-            <a href="https://www.linkedin.com/in/helene-monnier/" target="_blank"> <i class="fi fi-brands-linkedin"></i>LinkedIn</a>
+            <a href="mailto:monnier.helene@outlook.com" target="_blank" class="flex gap-2 items-center "> 
+              <iconify-icon icon="material-symbols:alternate-email" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
+              monnier.helene@outlook.com
+            </a>
+            <a href="https://github.com/helene-monnier" target="_blank" class="flex gap-2 items-center ">
+              <iconify-icon icon="mdi:github" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/helene-monnier/" target="_blank" class="flex gap-2 items-center "> 
+              <iconify-icon icon="typcn:social-linkedin-circular" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
+              LinkedIn
+            </a>
           </div>
-          <div class="w-2/3">
+          <div class="w-2/3 flex flex-col gap-10">
             <h3 class="text-2xl uppercase font-bold">Envie de me contacter?</h3>
             <p>Génial ! Que ce soit pour discuter de projets, échanger des idées ou simplement papoter, je suis toute ouïe. Remplis le formulaire ci-dessous et je te répondrai dès que possible !</p>
 
             <form class="" action="" method="post">
               <label for="nom">Nom :</label>
-              <input class="" type="text" id="nom" name="nom"  placeholder="Ton nom" required><br><br>
+              <input class="p-5" type="text" id="nom" name="nom"  placeholder="Ton nom" required><br><br>
         
               <label for="email">E-mail :</label>
               <input class="" type="email" id="email" name="email" placeholder="Ton adresse mail" required><br><br>
