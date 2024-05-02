@@ -9,17 +9,18 @@
   <script src="./src/js/script.js" defer></script>
 </head>
 <body class="bg-background h-screen w-screen">
-  <header id="home" class="flex md:h-screen">
-    <div class="flex flex-col justify-center items-start w-1/2 p-10 gap-10">
+  <header id="home" class="flex ">
+    <div class="flex flex-col justify-center items-start p-10 gap-10">
       <p class="uppercase font-bold text-3xl">Hi there!</p>
       <p class="uppercase font-bold text-7xl">I'm <strong>Helene</strong></p>
+      <img src="/public/pictures/porfolio/2.svg" alt="" class="rounded-full">
       <h1 class="uppercase font-bold bg-primary text-background p-4">Développeuse - Javascript fullstack</h1>
-      <p class="">En reconversion dans le développement web et web mobile, je suis à l'affût de nouveaux projets  développeuse FullStack JS. 
+      <p>En reconversion dans le développement web et web mobile, je suis à l'affût de nouveaux projets  développeuse FullStack JS. 
         <strong>Javascript, Node.Js, Express, REACT, Tailwind</strong> sont mes terrains de jeux de prédilection. 
         J’ai soif d’apprentissages et j’ai hâte de contribuer à l’évolution de vos projets !</p>        
-      <a href="./index.html" class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2">More about me</a>
+      <a href="#about-me" class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2">More about me</a>
     </div>
-    <div class="w-1/2 bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center"></div>
+    <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center"></div>
   </header>
   <main class="pt-10">
     <div class="hidden  flex-col bg-primary  text-background font-bold h-screen w-1/5">
@@ -35,41 +36,39 @@
       </nav>
     </div>
     <div class="flex flex-col gap-10">
-      <section class="mx-auto px-20 py-5 flex flex-col gap-14 justify-between" id="about-me">
+      <section class="px-8 py-5 flex flex-col gap-14 justify-between" id="about-me">
         <h2 class="uppercase text-center text-4xl font-bold p-4 border-2 border-accent ">about me</h2>
-        <h1 class="text-3xl p-4">I'm <strong>Hélène Monnier-Capron,</strong> Développeuse web fullstack JS</h1>
-        <p class="p-4">En reconversion dans le développement web et web mobile, je suis à la recherche de nouveaux terrains de jeux pour développer mes compétences comme développeuse FullStack JS. 
+        <h1 class="text-3xl">I'm <strong>Hélène Monnier-Capron,</strong> Développeuse web fullstack JS</h1>
+        <p>En reconversion dans le développement web et web mobile, je suis à la recherche de nouveaux terrains de jeux pour développer mes compétences comme développeuse FullStack JS. 
         JS, Node.Js, Express, REACT, HTML & CSS sont mes terrains de jeux de prédilection. 
         J’ai soif d’apprentissages et j’ai hâte de contribuer à l’évolution de vos projets !</p> 
-        <div class="flex flex-wrap justify-evenly">
-          <div class="flex flex-col gap-2 items-center w-1/4">
+        <div class="flex flex-wrap justify-evenly gap-10">
+          <div class="flex flex-col gap-2 items-center">
             <iconify-icon icon="line-md:bell-alert-loop" width="3rem" height="3rem"  style="color: #e5be5d"></iconify-icon>
             <p class="text-center font-bold">Veille techno</p>
             <p class="text-center">Toujours à l'affut de nouveaux terrains de jeux</p>
           </div>
-          <div class="flex flex-col gap-2 items-center w-1/4">
+          <div class="flex flex-col gap-2 items-center">
             <iconify-icon icon="line-md:heart" width="3rem" height="3rem"  style="color: #e5be5d"></iconify-icon>
             <p class="text-center font-bold">Passion</p>
             <p class="text-center">Envie de donner le meilleur pour chaque projet</p>
           </div>
-          <div class="flex flex-col gap-2 items-center w-1/4">
+          <div class="flex flex-col gap-2 items-center">
             <iconify-icon icon="line-md:coffee-half-empty-twotone-loop" width="3rem" height="3rem"  style="color: #e5be5d"></iconify-icon>
             <p class="text-center font-bold">Travail d'équipe</p>
             <p class="text-center">Clients, collègues, managers; ensemble, c'est mieux !</p>
           </div>
-        </div>
-        <div class="flex flex-wrap justify-evenly">
-          <div class="flex flex-col gap-2 items-center w-1/4">
+          <div class="flex flex-col gap-2 items-center">
             <iconify-icon icon="line-md:sun-rising-twotone-loop" width="3rem" height="3rem"  style="color: #e5be5d"></iconify-icon>
             <p class="text-center font-bold">Front</p>
             <p class="text-center">REACT, Tailwind, EJS, Intégration HTML/CSS/JS</p>
           </div>
-          <div class="flex flex-col gap-2 items-center w-1/4">
+          <div class="flex flex-col gap-2 items-center">
             <iconify-icon icon="line-md:cog-filled-loop" width="3rem" height="3rem"  style="color: #e5be5d"></iconify-icon>
             <p class="text-center font-bold">Back</p>
             <p class="text-center">Javascript, NodeJS, Express, Sequelize</p>
-          </div>
-        </class=>    
+          </div> 
+        </div>
       </section>
 
       <div id="typedtext" class="bg-primary text-background p-4 text-center text-lg leading-10">
@@ -77,7 +76,7 @@
         <p>Pablo Picasso</p>
       </div>
 
-      <section class=" px-20 py-5 flex flex-col gap-4 " id="portfolio">
+      <section class=" px-8 py-5 flex flex-col gap-4 " id="portfolio">
         <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Portfolio</h2>
         <nav class="p-4 hidden">
         <ul class="flex justify-evenly gap-4">
@@ -88,13 +87,13 @@
           <li>Appli</li>
         </ul>
         </nav>
-        <div class="flex flex-wrap justify-evenly p-4">
-          <a href="https://www.playground-explorer.fr/" target="_blank" class="flex flex-col gap-4 items-center cursor-pointer w-1/4 ">
+        <div class="flex flex-wrap justify-evenly p-4 gap-14">
+          <a href="https://www.playground-explorer.fr/" target="_blank" class="flex flex-col gap-4 items-center cursor-pointer ">
             <img src="/public/pictures/porfolio/1.svg" alt="" class="rounded-full">
             <h3 class="font-bold">Playground Explorer</h3>
             <p class="text-center">Projet de fin de formation fait en équipe dans une démarche Agile. REACT, Redux, Tailwind, Node, Mongo...</p>
           </a>
-          <a href="#" target="_blank" class="flex flex-col gap-4 items-center cursor-pointer w-1/4 ">
+          <a href="#" target="_blank" class="flex flex-col gap-4 items-center cursor-pointer">
             <img src="/public/pictures/porfolio/2.svg" alt="" class="rounded-full">
             <h3 class="font-bold">Ce portfolio</h3>
             <p class="text-center">Présente quelques projets professionnels et personnels sur lesquels j'ai pu travailler. HTML, Tailwind.</p>
@@ -108,16 +107,16 @@
           <p>}</p>
       </div>
 
-      <section class="px-20 py-5 flex flex-col gap-10 flex-wrap" id="resume">
+      <section class="px-8 py-5 flex flex-col gap-10 flex-wrap" id="resume">
         <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Parcours</h2>        
         <h3 class="text-2xl uppercase font-bold ">Expériences</h3>
-        <div class="flex gap-4 justify-evenly flex-wrap p-4">
-          <div class="flex flex-col flex-wrap p-2 gap-1 w-1/3 items-start">
+        <div class="flex flex-col gap-8 justify-evenly flex-wrap">
+          <div class="flex flex-col flex-wrap gap-4">
             <h4 class="text-xl bg-primary text-background p-2">Playground Explorer</h4>
             <p class="text-sm "> Avril 2024 - Ecole O'CLock</p>
             <p class="">Conception et mise en œuvre collaborative d'une application web dans un environnement professionnel, du stade conceptuel jusqu'au déploiement d'un produit minimum viable (MVP), en suivant la méthodologie agile.</p>
           </div>
-          <div class="flex flex-col flex-wrap p-2 gap-1 w-1/3 items-start">
+          <div class="flex flex-col flex-wrap gap-4">
             <h4 class="text-xl bg-primary text-background p-2">Consultante numérique</h4>
             <p class="text-sm">2014 > 2023 - BGE Hauts de France</p>
             <p class="">J'ai soutenu la transformation numérique d'entrepreneurs, au niveau stratégique et dans l'utilisation des outils
@@ -127,33 +126,32 @@
         </div>
 
         <h3 class="text-2xl uppercase font-bold">Formations</h3>
-        <div class="flex gap-4 justify-evenly flex-wrap p-4">
-          <div class="flex flex-col flex-wrap p-2 gap-1 w-1/3 items-start">
+        <div class="flex flex-col gap-8 justify-evenly flex-wrap">
+          <div class="flex flex-col flex-wrap gap-4">
             <h4 class="text-xl bg-primary text-background p-2 ">Ecole O'Clock</h4>
             <p class="text-sm">Octobre 2023 - Avril 2024</p>
             <p class="">Formation de 6 mois à temps plein, en téléprésentiel, de préparation au Titre Professionnel Développeur Web et Web Mobile</p>
           </div>
-          <div class="flex flex-col flex-wrap p-2 gap-1 w-1/3 items-start">
+          <div class="flex flex-col flex-wrap gap-4">
             <h4 class="text-xl bg-primary text-background p-2">IAE Lille</h4>
             <p class="text-sm">2014 - 2015</p>
             <p class="">Licence Professionnelle Management des Organisations. Effectuée en contrat de professionnalisation chez BGE Hauts de France</p>
           </div>
         </div> 
-        <a class="bg-primary text-background font-bold uppercase p-4 border-2 rounded-full hover:text-primary hover:bg-background hover:border-2 text-center w-1/5" href="./public/pictures/Hélène Monnier-Capron.pdf" target="_blank">Mon CV</a>
+        <a class="bg-primary text-background font-bold p-4 border-2 hover:text-primary hover:bg-background hover:border-2" href="./public/pictures/Hélène Monnier-Capron.pdf" target="_blank">Mon CV</a>
       </section>
 
       <div class="bg-primary text-background p-4 text-center text-lg leading-10">
         <p>Let's make your project my 127.0.0.1</p>
       </div>
 
-      <section class="px-20 py-5 flex flex-col gap-10 flex-wrap" id="contact">
-        <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Contact</h2>        
-        
-        <h3 class="text-2xl uppercase font-bold">Collaborations</h3>
+      <section class="px-8 py-5 flex flex-col gap-10 flex-wrap" id="contact">
+        <h2 class="uppercase text-center text-3xl font-bold p-4 border-2 border-accent ">Contact</h2>
+        <h3 class="text-2xl uppercase font-bold ">Collaborations</h3>
         <p>Je suis ouverte aux opportunités de collaboration, que ce soit pour des missions freelance ou des postes à temps plein. N'hésites pas à me contacter si tu as un projet intéressant à discuter !</p>
 
-        <div class="flex gap-20">
-          <div class="flex flex-col gap-10 w-1/3">
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-10">
             <h3 class="text-2xl uppercase font-bold">On se suit ?</h3>
             <p>Je suis toujours hyper connectée, donc tu peux aussi me joindre par ces moyens : </p>
             <a href="mailto:monnier.helene@outlook.com" target="_blank" class="flex gap-2 items-center "> 
@@ -169,24 +167,28 @@
               LinkedIn
             </a>
           </div>
-          <div class="w-2/3 flex flex-col gap-10">
+          <div class=" flex flex-col gap-10">
             <h3 class="text-2xl uppercase font-bold">Envie de me contacter?</h3>
             <p>Génial ! Que ce soit pour discuter de projets, échanger des idées ou simplement papoter, je suis toute ouïe. Remplis le formulaire ci-dessous et je te répondrai dès que possible !</p>
 
-            <form class="" action="" method="post">
-              <label for="nom">Nom :</label>
-              <input class="p-5" type="text" id="nom" name="nom"  placeholder="Ton nom" required><br><br>
-        
-              <label for="email">E-mail :</label>
-              <input class="" type="email" id="email" name="email" placeholder="Ton adresse mail" required><br><br>
-      
-              <label for="sujet">Sujet :</label>            
-              <input class="" type="text" id="sujet" name="sujet" placeholder="L'objet de ton message" required><br><br>
-        
-              <label for="message">Message :</label><br>
-              <textarea class="" id="message" name="message" rows="4" cols="50" placeholder="Dis-moi tout!" required></textarea><br><br>
-        
-              <input class="" type="submit" value="Envoyer">
+            <form class="flex flex-col gap-5" action="" method="post">
+              <div class="flex flex-col">
+                <label for="nom">Nom :</label>
+                <input class="px-1 py-2" type="text" id="nom" name="nom"  placeholder="Ton nom" required>
+              </div>
+              <div class="flex flex-col">
+                <label for="email">E-mail :</label>
+                <input class="px-1 py-2" type="email" id="email" name="email" placeholder="Ton adresse mail" required>
+              </div>
+              <div class="flex flex-col">
+                <label for="sujet">Sujet :</label>            
+                <input class="px-1 py-2" type="text" id="sujet" name="sujet" placeholder="L'objet de ton message" required>
+              </div>
+              <div class="flex flex-col">
+                <label for="message">Message :</label><br>
+                <textarea class="px-1 py-2" id="message" name="message" rows="4" cols="30" placeholder="Dis-moi tout!" required></textarea>
+              </div>
+              <input class="bg-primary text-background font-bold p-4 border-2 hover:text-primary hover:bg-background hover:border-2" type="submit" value="Envoyer">
             </form>
           </div>
         </div>
