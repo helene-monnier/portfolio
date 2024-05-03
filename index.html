@@ -22,8 +22,8 @@
     </div>
     <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center md:w-1/2"></div>
   </header>
-  <main class="flex pt-10">
-    <div class="hidden sticky top-0 flex-col bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold h-screen min-w-52 md:block lg:min-w-60">
+  <div class="flex pt-10">
+    <aside class="hidden sticky top-0 flex-col bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold h-screen min-w-52 md:block lg:min-w-60">
       <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-cover bg-center bg-no-repeat h-2/6"></div>
       <nav class="">
         <ul class="flex flex-col gap-16 uppercase pt-10 items-center">            
@@ -45,8 +45,8 @@
           <iconify-icon icon="typcn:social-linkedin-circular" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
         </a>
       </div>
-    </div>
-    <div class="flex flex-col gap-10 text-text dark:text-text-dark">
+    </aside>
+    <main class="flex flex-col gap-10 text-text dark:text-text-dark">
       <section class="px-8 py-5 flex flex-col gap-14 justify-between md:px-10 lg:px-24" id="about-me">
         <h2 class="uppercase text-center text-4xl font-bold p-4 border-2 border-accent ">about me</h2>
         <h1 class="text-3xl">I'm <strong>Hélène Monnier-Capron,</strong> Développeuse web fullstack JS</h1>
@@ -204,25 +204,24 @@
           </div>
         </div>
       </section>
-    <section class="fixed bottom-0 w-screen flex justify-evenly p-4 bg-primary dark:bg-primary-dark text-text-dark dark:text-text md:block">
-        <a href="mailto:monnier.helene@outlook.com" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
-          <iconify-icon icon="material-symbols:alternate-email" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
-        </a>
-        <a href="https://github.com/helene-monnier" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 ">
-          <iconify-icon icon="mdi:github" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/helene-monnier/" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
-          <iconify-icon icon="typcn:social-linkedin-circular" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
-        </a>
-    </section>
-    </div>
+      <section class="fixed bottom-0 w-screen flex justify-evenly p-4 bg-primary dark:bg-primary-dark text-text-dark dark:text-text md:hidden">
+          <a href="mailto:monnier.helene@outlook.com" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
+            <iconify-icon icon="material-symbols:alternate-email" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
+          </a>
+          <a href="https://github.com/helene-monnier" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 ">
+            <iconify-icon icon="mdi:github" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/helene-monnier/" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
+            <iconify-icon icon="typcn:social-linkedin-circular" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
+          </a>
+      </section>
+      <div class="hidden bg-primary dark:bg-primary-dark text-text-dark dark:text-text p-4 text-center text-lg leading-10 md:block">
+        <p>© Hélène Monnier-Capron 2024</p>
+      </div>
+    </main>
     <section id="darkMode">
       <button class="fixed right-2 top-2 hover:rotate-12 transition ease-in-out duration-300"><iconify-icon icon="mdi:theme-light-dark" width="3rem" height="3rem"  style="color: #e5be5d"></iconify-icon></button>
     </section>
-
-  </main>
-  <footer class="hidden bg-primary dark:bg-primary-dark text-text-dark dark:text-text p-4 text-center text-lg leading-10 md:block">
-    <p>© Hélène Monnier-Capron 2024</p>
-  </footer>
+  </div>
 </body>
 </html>
