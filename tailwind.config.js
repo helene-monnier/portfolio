@@ -11,7 +11,7 @@ module.exports = {
     colors: {
       primary: {
         DEFAULT: '#197586',
-        dark: '#79D6E6',
+        dark: '#71CBDB',
       },
 
       secondary: {
@@ -25,13 +25,13 @@ module.exports = {
       },
 
       text: {
-        DEFAULT: '#04191A',
-        dark: '#E5FAFB',
+        DEFAULT: '#181a1b',
+        dark: '#F2FBFD',
       },
 
       background: {
         DEFAULT: '#F2FBFD',
-        dark: '#020B0D',
+        dark: '#181a1b',
       },
 
       white: '#ffffff',
@@ -44,5 +44,6 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  darkMode: 'selector',
 }
 
