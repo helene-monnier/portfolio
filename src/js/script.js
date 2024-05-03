@@ -59,3 +59,21 @@ document.querySelector('#darkMode').addEventListener('click', function() {
     localStorage.setItem('theme', 'light');
   }
 });
+
+
+/** FORM SUBMIT */
+
+document.querySelector('#contact-form').addEventListener('submit', function(event) {
+  // prevent the default behavior of the form
+  event.preventDefault();
+  // get the form data
+  const formData = new FormData(this);
+  // create an object to store the form values
+  const data = Object.fromEntries(formData.entries());
+  // log the form data
+  console.log(data);
+  // reset the form
+  this.reset();
+  // display a success message
+  alert('Ton message a bien été envoyé !');
+});
