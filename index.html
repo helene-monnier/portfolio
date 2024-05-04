@@ -8,6 +8,8 @@
   <link rel="icon" type="image" href="/public/pictures/favicon/favicon.png" >
   <link rel="stylesheet" href="./src/dist/style.css">
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   <script src="./src/js/script.js" defer></script>
 </head>
 <body class="text-text dark:text-text-dark bg-background dark:bg-background-dark h-screen w-screen">
@@ -207,18 +209,19 @@
             <h3 class="text-2xl uppercase font-bold">Envie de me contacter?</h3>
             <p>Génial ! Que ce soit pour discuter de projets, échanger des idées ou simplement papoter, je suis toute ouïe. Remplissez le formulaire ci-dessous et je vous répondrai dans les 48h !</p>
 
-            <form id="contact-form" class="flex flex-col gap-5" action="" method="post">
+            <form id="contact-form" class="flex flex-col gap-5" action="" method="POST">
+              <input type="hidden" name="contact_number" value="697483">
               <div class="flex flex-col">
                 <label for="nom">Nom :</label>
-                <input class="px-1 py-2" type="text" id="nom" name="nom"  placeholder="Ton nom" minlength="1" maxlength="20" required>
+                <input class="px-1 py-2" type="text" id="nom" name="user_name"  placeholder="Ton nom" minlength="1" maxlength="20" required>
               </div>
               <div class="flex flex-col">
                 <label for="email">E-mail :</label>
-                <input class="px-1 py-2" type="email" id="email" name="email" placeholder="Ton adresse mail" required>
+                <input class="px-1 py-2" type="email" id="email" name="user_email" placeholder="Ton adresse mail" required>
               </div>
               <div class="flex flex-col">
-                <label for="sujet">Sujet :</label>            
-                <input class="px-1 py-2" type="text" id="sujet" name="sujet" placeholder="L'objet de ton message" minlength="1" maxlength="50" required>
+                <label for="subject">Sujet :</label>            
+                <input class="px-1 py-2" type="text" id="subject" name="subject" placeholder="L'objet de ton message" minlength="1" maxlength="50" required>
               </div>
               <div class="flex flex-col">
                 <label for="message">Message :</label><br>
@@ -226,6 +229,9 @@
               </div>
               <input class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark  text-text-dark dark:text-text font-bold uppercase px-4 py-2 border-2 rounded-full w-fit hover:text-primary hover:bg-background hover:border-2" type="submit" value="Envoyer">
             </form>
+            <div id="success-message" style="display: none;">Votre message a été envoyé avec succès!</div>
+<div id="error-message" style="display: none;">Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer.</div>
+
           </div>
         </div>
       </section>

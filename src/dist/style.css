@@ -522,9 +522,6 @@ video {
 .flex {
   display: flex;
 }
-.list-item {
-  display: list-item;
-}
 .hidden {
   display: none;
 }
@@ -552,15 +549,6 @@ video {
 }
 .list-inside {
   list-style-position: inside;
-}
-.list-outside {
-  list-style-position: outside;
-}
-.list-decimal {
-  list-style-type: decimal;
-}
-.list-disc {
-  list-style-type: disc;
 }
 .flex-row {
   flex-direction: row;
@@ -680,9 +668,6 @@ video {
 }
 .text-center {
   text-align: center;
-}
-.align-top {
-  vertical-align: top;
 }
 .text-2xl {
   font-size: 1.5rem;

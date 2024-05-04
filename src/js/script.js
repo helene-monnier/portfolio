@@ -63,17 +63,27 @@ document.querySelector('#darkMode').addEventListener('click', function() {
 
 /** FORM SUBMIT */
 
-document.querySelector('#contact-form').addEventListener('submit', function(event) {
-  // prevent the default behavior of the form
-  event.preventDefault();
-  // get the form data
-  const formData = new FormData(this);
-  // create an object to store the form values
-  const data = Object.fromEntries(formData.entries());
-  // log the form data
-  console.log(data);
-  // reset the form
-  this.reset();
-  // display a success message
-  alert('Ton message a bien été envoyé !');
-});
+(function(){
+   emailjs.init({
+     publicKey: "92WeyJWZ0YXdUhUPc",
+   });
+})();
+
+window.onload = function() {
+  const successMessage = document.getElementById('success-message');
+  const errorMessage = document.getElementById('error-message');
+  document.querySelector('#contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(() => {
+            successMessage.style.display = 'block';
+            errorMessage.style.display = 'none'; 
+              console.log('SUCCESS!');
+          }, (error) => {
+            errorMessage.style.display = 'block';
+            successMessage.style.display = 'none'; 
+              console.log('FAILED...', error);
+          });
+      this.reset();
+  });
+}
