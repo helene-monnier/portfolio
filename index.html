@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Développeuse Javascript Fullstack, je suis à la recherche d'un contrat de professionnalisation d'octobre 2024 à juin 2026.">
+  <meta name="description" content="Développeuse Javascript Fullstack, je donne vie à vos projets web!">
   <title>Hélène Monnier-Capron // Développeuse Javascript Fullstack</title>
   <link rel="icon" type="image" href="/public/pictures/favicon/favicon.png" >
   <link rel="stylesheet" href="./src/dist/style.css">
@@ -23,7 +23,7 @@
         <strong>Javascript, Node.Js, Express, REACT, Tailwind</strong> sont mes terrains de jeux de prédilection. 
         J’ai soif d’apprentissages et j’ai hâte de contribuer à l’évolution de vos projets !</p>
       <p>Je suis en recherche active d'un <strong>contrat de professionnalisation d'octobre 2024 à juin 2026</strong>.</p>       
-      <a href="#about-me" class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold uppercase p-4 border-2 rounded-full w-fit hover:text-primary dark:hover:text-primary-dark hover:bg-background dark:hover:bg-background-dark hover:border-2">More about me</a>
+      <a href="#about-me" class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold uppercase px-4 py-2 border-2 rounded-full w-fit hover:text-primary dark:hover:text-primary-dark hover:bg-background dark:hover:bg-background-dark hover:border-2">More about me</a>
     </div>
     <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center md:w-1/2"></div>
   </header>
@@ -40,7 +40,7 @@
         </ul>
       </nav>
       <div class="flex justify-around pt-10">
-        <a href="mailto:monnier.helene@outlook.com" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
+        <a href="mailto:contact@helene-monnier.fr" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
           <iconify-icon icon="material-symbols:alternate-email" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
         </a>
         <a href="https://github.com/helene-monnier" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 ">
@@ -72,7 +72,7 @@
         </div>
 
         <p>Je suis également ouverte à des missions freelance, alors n'hésitez pas à me contacter si vous avez un projet à discuter !</p>
-        <a href="#contact" class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold uppercase p-4 border-2 rounded-full w-fit hover:text-primary dark:hover:text-primary-dark hover:bg-background dark:hover:bg-background-dark hover:border-2">Me contacter</a>
+        <a href="#contact" class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold uppercase px-4 py-2 border-2 rounded-full w-fit hover:text-primary dark:hover:text-primary-dark hover:bg-background dark:hover:bg-background-dark hover:border-2">Me contacter</a>
 
         <div class="flex flex-wrap justify-evenly gap-10">
           <div class="flex flex-col gap-2 items-center">
@@ -192,15 +192,15 @@
           <div class="flex flex-col gap-10">
             <h3 class="text-2xl uppercase font-bold">On se suit ?</h3>
             <p>Je suis hyper connectée, donc vous pouvez aussi me joindre par ces moyens : </p>
-            <a href="mailto:monnier.helene@outlook.com" target="_blank" class="flex gap-2 items-center hover:translate-x-4 transition ease-in-out duration-300 "> 
+            <a href="mailto:contact@helene-monnier.fr" target="_blank" class="flex gap-2 items-center hover:translate-x-4 transition ease-in-out duration-300 w-fit"> 
               <iconify-icon icon="material-symbols:alternate-email" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
-              monnier.helene@outlook.com
+              contact@helene-monnier.fr
             </a>
-            <a href="https://github.com/helene-monnier" target="_blank" class="flex gap-2 items-center hover:translate-x-4 transition ease-in-out duration-300 ">
+            <a href="https://github.com/helene-monnier" target="_blank" class="flex gap-2 items-center hover:translate-x-4 transition ease-in-out duration-300 w-fit">
               <iconify-icon icon="mdi:github" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/helene-monnier/" target="_blank" class="flex gap-2 items-center hover:translate-x-4 transition ease-in-out duration-300 "> 
+            <a href="https://www.linkedin.com/in/helene-monnier/" target="_blank" class="flex gap-2 items-center hover:translate-x-4 transition ease-in-out duration-300 w-fit"> 
               <iconify-icon icon="typcn:social-linkedin-circular" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
               LinkedIn
             </a>
@@ -209,34 +209,41 @@
             <h3 class="text-2xl uppercase font-bold">Envie de me contacter?</h3>
             <p>Génial ! Que ce soit pour discuter de projets, échanger des idées ou simplement papoter, je suis toute ouïe. Remplissez le formulaire ci-dessous et je vous répondrai dans les 48h !</p>
 
-            <form id="contact-form" class="flex flex-col gap-5" action="" method="POST">
+            <form id="contact-form" class="flex flex-col gap-5 lg:max-w-2xl" action="" method="POST">
               <input type="hidden" name="contact_number" value="697483">
-              <div class="flex flex-col">
-                <label for="nom">Nom :</label>
-                <input class="px-1 py-2" type="text" id="nom" name="user_name"  placeholder="Ton nom" minlength="1" maxlength="20" required>
+              <div class="flex gap-10">
+                <div class="flex flex-col w-full">
+                  <label for="nom">Nom : *</label>
+                  <input class="px-1 py-2" type="text" id="name" name="user_name"  placeholder="Ton nom" minlength="1" maxlength="20" required>
+                </div>
+                <div class="flex flex-col w-full">
+                  <label for="nom">Prénom : *</label>
+                  <input class="px-1 py-2" type="text" id="firstname" name="user_firstname"  placeholder="Ton prénom" minlength="1" maxlength="20" required>
+                </div>
               </div>
+
               <div class="flex flex-col">
-                <label for="email">E-mail :</label>
+                <label for="email">E-mail : *</label>
                 <input class="px-1 py-2" type="email" id="email" name="user_email" placeholder="Ton adresse mail" required>
               </div>
               <div class="flex flex-col">
-                <label for="subject">Sujet :</label>            
+                <label for="subject">Sujet : *</label>            
                 <input class="px-1 py-2" type="text" id="subject" name="subject" placeholder="L'objet de ton message" minlength="1" maxlength="50" required>
               </div>
               <div class="flex flex-col">
-                <label for="message">Message :</label><br>
+                <label for="message">Message : *</label><br>
                 <textarea class="px-1 py-2" id="message" name="message" rows="4" cols="30" placeholder="Dis-moi tout!"  minlength="1" maxlength="1000" required></textarea>
               </div>
-              <input class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark  text-text-dark dark:text-text font-bold uppercase px-4 py-2 border-2 rounded-full w-fit hover:text-primary hover:bg-background hover:border-2" type="submit" value="Envoyer">
+              <input class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark  text-text-dark dark:text-text font-bold uppercase px-4 py-2 border-2 rounded-full w-fit hover:text-primary hover:bg-background hover:border-2" type="submit" value="J'envoie mon message">
             </form>
-            <div id="success-message" style="display: none;">Votre message a été envoyé avec succès!</div>
-<div id="error-message" style="display: none;">Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer.</div>
+            <div id="success-message" style="display: none;">Votre message a été envoyé avec succès! Vous recevrez une réponse sous 48h.</div>
+            <div id="error-message" style="display: none;">Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer.</div>
 
           </div>
         </div>
       </section>
       <section class="fixed bottom-0 w-screen flex justify-evenly p-4 bg-primary dark:bg-primary-dark text-text-dark dark:text-text md:hidden">
-          <a href="mailto:monnier.helene@outlook.com" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
+          <a href="mailto:contact@helene-monnier.fr" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 "> 
             <iconify-icon icon="material-symbols:alternate-email" width="2rem" height="2rem"  style="color: #e5be5d"></iconify-icon>
           </a>
           <a href="https://github.com/helene-monnier" target="_blank" class="flex gap-2 items-center hover:-translate-y-2 transition ease-in-out duration-300 ">
