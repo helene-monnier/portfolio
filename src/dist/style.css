@@ -528,12 +528,12 @@ video {
 .h-2\/6 {
   height: 33.333333%;
 }
-.h-screen {
-  height: 100vh;
-}
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+.h-screen {
+  height: 100vh;
 }
 .w-fit {
   width: -moz-fit-content;
@@ -622,6 +622,18 @@ video {
 }
 .bg-\[url\(\/public\/pictures\/helene-monnier\.jpeg\)\] {
   background-image: url(/public/pictures/helene-monnier.jpeg);
+}
+.bg-\[url\(\/public\/pictures\/helene-monnier\.jpg\)\] {
+  background-image: url(/public/pictures/helene-monnier.jpg);
+}
+.bg-\[url\(\/public\/pictures\/helene-monnier\.\)\] {
+  background-image: url(/public/pictures/helene-monnier.);
+}
+.bg-\[url\(\/public\/pictures\/helene-monnier\.web\)\] {
+  background-image: url(/public/pictures/helene-monnier.web);
+}
+.bg-\[url\(\/public\/pictures\/helene-monnier\.webp\)\] {
+  background-image: url(/public/pictures/helene-monnier.webp);
 }
 .bg-cover {
   background-size: cover;
