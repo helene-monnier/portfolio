@@ -7,17 +7,17 @@
   <title>Hélène Monnier-Capron // Développeuse Javascript Fullstack</title>
   <link rel="icon" type="image" href="/public/pictures/favicon/favicon.png" >
   <link rel="stylesheet" href="./src/dist/style.css">
-  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
 
   <script src="./src/js/script.js" defer></script>
 </head>
-<body class="text-text dark:text-text-dark bg-background dark:bg-background-dark h-screen w-screen">
+<body class="text-text dark:text-text-dark bg-background dark:bg-background-dark h-fit w-fit">
   <header id="home" class="flex ">
     <div class="flex flex-col justify-center items-start p-10 gap-10 md:w-1/2 md:h-screen">
       <p class="uppercase font-bold text-3xl">Hi there!</p>
       <p class="uppercase font-bold text-7xl">I'm <strong class="">Helene</strong></p>
-      <img src="/public/pictures/porfolio/2.svg" alt="" class="rounded-full md:hidden">
+      <img src="/public/pictures/porfolio/2.svg" alt="" class="rounded-full md:hidden data-twe-lazy-load-init">
       <h1 class="uppercase font-bold bg-primary dark:bg-primary-dark text-text-dark dark:text-text p-4">Développeuse - Javascript fullstack</h1>
       <p>Conceptrice et développeuse d'applications web et mobiles, je suis à l'affût de nouveaux projets. 
         <strong>Javascript, Node.Js, Express, REACT, Tailwind</strong> sont mes terrains de jeux de prédilection. 
@@ -25,11 +25,11 @@
       <p>Je suis en recherche active d'un <strong>contrat de professionnalisation d'octobre 2024 à juin 2026</strong>.</p>       
       <a href="#about-me" class=" transition ease-in-out duration-300 bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold uppercase px-4 py-2 border-2 rounded-full w-fit hover:text-primary dark:hover:text-primary-dark hover:bg-background dark:hover:bg-background-dark hover:border-2">More about me</a>
     </div>
-    <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center md:w-1/2"></div>
+    <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-no-repeat bg-cover bg-center md:w-1/2 data-twe-lazy-load-init"></div>
   </header>
   <div class="flex pt-10">
     <aside class="hidden sticky top-0 flex-col bg-primary dark:bg-primary-dark text-text-dark dark:text-text font-bold h-screen min-w-52 md:block lg:min-w-60">
-      <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-cover bg-center bg-no-repeat h-2/6"></div>
+      <div class="bg-[url(/public/pictures/helene-monnier.jpeg)] bg-cover bg-center bg-no-repeat h-2/6 data-twe-lazy-load-init"></div>
       <nav class="">
         <ul class="flex flex-col gap-16 uppercase pt-10 items-center">            
           <li class="transition ease-in-out hover:scale-150 duration-300"><a href="#home">Home</a></li>
@@ -121,12 +121,12 @@
         </nav>
         <div class="flex flex-col items-center p-4 gap-14 md:flex-row md:justify-evenly">
           <a href="https://www.playground-explorer.fr/" target="_blank" class="flex flex-col gap-4 items-center cursor-pointer max-w-80 hover:scale-105 transition ease-in-out duration-300 ">
-            <img src="/public/pictures/porfolio/1.svg" alt="" class="rounded-full">
+            <img src="/public/pictures/porfolio/1.svg" alt="" class="rounded-full data-twe-lazy-load-init">
             <h3 class="font-bold">Playground Explorer</h3>
             <p class="text-center">Projet de fin de formation fait en équipe dans une démarche Agile. REACT, Redux, Tailwind, Node, Mongo...</p>
           </a>
           <a href="#home" target="_blank" class="flex flex-col gap-4 items-center cursor-pointer max-w-80 hover:scale-105 transition ease-in-out duration-300 ">
-            <img src="/public/pictures/porfolio/2.svg" alt="" class="rounded-full">
+            <img src="/public/pictures/porfolio/2.svg" alt="" class="rounded-full data-twe-lazy-load-init">
             <h3 class="font-bold">Ce portfolio</h3>
             <p class="text-center">Présente quelques projets professionnels et personnels sur lesquels j'ai pu travailler. HTML, Tailwind.</p>
           </a>
